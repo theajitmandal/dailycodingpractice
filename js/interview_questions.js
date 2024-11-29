@@ -102,6 +102,8 @@
     9. Which company developed JavaScript?
         Netscape developed JavaScript and was created by Brenden Eich in the year of 1995.
 
+    10. What are undeclared and undefined variables?
+
 
 
 */
