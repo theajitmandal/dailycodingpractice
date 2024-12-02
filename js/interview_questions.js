@@ -103,6 +103,12 @@
         Netscape developed JavaScript and was created by Brenden Eich in the year of 1995.
 
     10. What are undeclared and undefined variables?
+        Undefined: It occurs when a variable is declare but not assign any value. Undefined is not a keyword.
+        
+        Undeclared: It occurs when we try to access any variable which is not initialized or declared earlier using 
+        the var or const keyword. If we use ‘typeof’ operator to get the value of an undeclare variable, 
+        we will face the runtime error with the return value as “undefined”. 
+        The scope of the undeclare variables is always global.
 
 
 
