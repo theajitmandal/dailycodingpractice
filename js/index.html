@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .newChild{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="newChild()">Click Here to Add New Child</button>
+    
+    <script>
+        function newChild(){
+            let newChild = document.createElement('p');
+            newChild.textContent = "I am added new child";
+            newChild.setAttribute('class', 'newChild');
+            document.body.appendChild(newChild);
+        }
+    </script>
+</body>
+</html>
