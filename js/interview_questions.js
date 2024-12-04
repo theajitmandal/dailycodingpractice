@@ -72,7 +72,7 @@
     5. What is the use of the isNaN function?
         isNan function determines whether the passed value is NaN (Not a number) and is of the type “Number”. 
         In JavaScript, the value NaN is considered a type of number. It returns true if the argument is not a number, 
-        else it returns false.
+        else it returns false.  Nan -> True, Else False
 
     6. Which is faster in JavaScript and ASP script?
         JavaScript is faster compared to ASP Script. JavaScript is a client-side scripting language and does not 
@@ -187,6 +187,99 @@
         The prompt box is a dialog box with an optional message prompting the user to input some text. 
         It is often used if the user wants to input a value before entering a page. It returns a string 
         containing the text entered by the user, or null.
+
+        window.prompt() instructs the browser to display a dialog with an optional message prompting the user to 
+        input some text, and to wait until the user either submits the text or cancels the dialog.
+
+        Syntax:
+        prompt()
+        prompt(message)
+        prompt(message, defaultValue)
+
+        Parameters
+        message Optional
+        A string of text to display to the user. Can be omitted if there is nothing to show in the prompt window.
+
+        defaultValue Optional
+        A string containing the default value displayed in the text input field.
+
+        Return value
+        A string containing the text entered by the user, or null.
+
+        Example:
+        let sign = prompt("What's your sign?");
+
+        if (sign.toLowerCase() === "scorpio") {
+            alert("Wow! I'm a Scorpio too!");
+        }
+
+        // there are many ways to use the prompt feature
+        sign = window.prompt(); // open the blank prompt window
+        sign = prompt(); //  open the blank prompt window
+        sign = window.prompt("Are you feeling lucky"); // open the window with Text "Are you feeling lucky"
+        sign = window.prompt("Are you feeling lucky", "sure"); // open the window with Text "Are you feeling lucky" and default value "sure"
+
+        My Example:
+          <body>
+            <button onclick="myFunction()">Click here!</button>
+            <p id="demo"></p>
+
+            <script>
+
+            function myFunction(){
+                const myName = prompt("Enter your name", "Tom");
+                document.getElementById('demo').innerHTML = `Hi + ${myName} + How are you?`;
+            }
+
+            </script>
+            </body>
+
+        16. What is the ‘this’ keyword in JavaScript?
+            Functions in JavaScript are essential objects. Like objects, it can be assign to variables, 
+            pass to other functions, and return from functions. And much like objects, they have their own properties. 
+            ‘this’ stores the current execution context of the JavaScript program. Thus, when it use inside a function, 
+            the value of ‘this’ will change depending on how the function is defined, how it is invoked, and the default 
+            execution context.
+
+        17. Explain the working of timers in JavaScript. Also explain the drawbacks of using the timer, if any.
+            The timer executes some specific code at a specific time or any small amount of code in repetition to do 
+            that you need to use the functions setTimout, setInterval, and clearInterval. If the JavaScript code sets 
+            the timer to 2 minutes and when the times are up then the page displays an alert message “times up”. 
+            The setTimeout() method calls a function or evaluates an expression after a specified number of milliseconds.
+
+        18. What is the difference between ViewState and SessionState?
+            ViewState: It is specific to a single page in a session.
+            SessionState: It is user specific that can access all the data on the web pages.
+        
+        19. How to submit a form using JavaScript?
+            You can use document.form[0].submit()method to submit the form in JavaScript.
+
+        20. Does JavaScript support automatic type conversion? 
+            Yes, JavaScript supports automatic type conversion.
+
+        21. What are all the looping structures in JavaScript?
+            while loop: A while loop is a control flow statement that allows code to be executed repeatedly based on a 
+                        given Boolean condition. The while loop can be thought of as a repeating if statement.
+            for loop: A for loop provides a concise way of writing the loop structure. Unlike a while loop, 
+                        for statement consumes the initialization, condition and increment/decrement in one line 
+                        thereby providing a shorter, easy to debug structure of looping.
+            do while: A do-while loop is similar to while loop with the only difference that it checks the condition
+                after executing the statements, and therefore is an example of Exit Control Loop.
+
+        22. How can the style/class of an element be changed?
+            To change the style/class of an element there are two possible ways. We use document.getElementByID method
+            document.getElementById("myText").style.fontSize = "16px;
+            document.getElementById("myText").className = "class";
+
+        23. Explain how to read and write a file using JavaScript?
+            The readFile() functions is used for reading operation.
+                readFile( Path, Options, Callback)
+            The writeFile() functions is used for writing operation.
+                writeFile( Path, Data, Callback)
+
+
+
+
 
 
 
