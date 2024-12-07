@@ -278,6 +278,10 @@
                 writeFile( Path, Data, Callback)
 
 
+                24. What is called Variable typing in JavaScript ?
+The variable typing is the type of variable used to store a number and using that same variable to assign a “string”.
+
+
 
 
 
