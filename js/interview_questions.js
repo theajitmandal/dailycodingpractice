@@ -281,6 +281,9 @@
                 24. What is called Variable typing in JavaScript ?
 The variable typing is the type of variable used to store a number and using that same variable to assign a “string”.
 
+Geeks = 42;
+Geeks = "GeeksforGeeks";
+
 
 
 
