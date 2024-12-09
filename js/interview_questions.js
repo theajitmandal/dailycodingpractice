@@ -278,11 +278,26 @@
                 writeFile( Path, Data, Callback)
 
 
-                24. What is called Variable typing in JavaScript ?
-The variable typing is the type of variable used to store a number and using that same variable to assign a “string”.
+        24. What is called Variable typing in JavaScript ?
+            The variable typing is the type of variable used to store a number and using that same variable to 
+            assign a “string”.
 
-Geeks = 42;
-Geeks = "GeeksforGeeks";
+            Geeks = 42;
+            Geeks = "GeeksforGeeks";
+
+        25. How to convert the string of any base to integer in JavaScript?
+            In JavaScript, parseInt() function is used to convert the string to an integer. 
+            This function returns an integer of base which is specified in second argument of parseInt() function. 
+            The parseInt() function returns Nan (not a number) when the string doesn’t contain number.
+
+        26. Explain how to detect the operating system on the client machine?
+            To detect the operating system on the client machine, one can simply use navigator.appVersion or 
+            navigator.userAgent property. The Navigator appVersion property is a read-only property and it 
+            returns the string that represents the version information of the browser.
+            
+            Deprecated: This feature is no longer recommended. Though some browsers might still support it, 
+            it may have already been removed from the relevant web standards, may be in the process of being dropped, 
+            or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible.
 
 
 
