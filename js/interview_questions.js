@@ -234,70 +234,83 @@
             </script>
             </body>
 
-        16. What is the ‘this’ keyword in JavaScript?
-            Functions in JavaScript are essential objects. Like objects, it can be assign to variables, 
-            pass to other functions, and return from functions. And much like objects, they have their own properties. 
-            ‘this’ stores the current execution context of the JavaScript program. Thus, when it use inside a function, 
-            the value of ‘this’ will change depending on how the function is defined, how it is invoked, and the default 
-            execution context.
+    16. What is the ‘this’ keyword in JavaScript?
+        Functions in JavaScript are essential objects. Like objects, it can be assign to variables, 
+        pass to other functions, and return from functions. And much like objects, they have their own properties. 
+        ‘this’ stores the current execution context of the JavaScript program. Thus, when it use inside a function, 
+        the value of ‘this’ will change depending on how the function is defined, how it is invoked, and the default 
+        execution context.
 
-        17. Explain the working of timers in JavaScript. Also explain the drawbacks of using the timer, if any.
-            The timer executes some specific code at a specific time or any small amount of code in repetition to do 
-            that you need to use the functions setTimout, setInterval, and clearInterval. If the JavaScript code sets 
-            the timer to 2 minutes and when the times are up then the page displays an alert message “times up”. 
-            The setTimeout() method calls a function or evaluates an expression after a specified number of milliseconds.
+    17. Explain the working of timers in JavaScript. Also explain the drawbacks of using the timer, if any.
+        The timer executes some specific code at a specific time or any small amount of code in repetition to do 
+        that you need to use the functions setTimout, setInterval, and clearInterval. If the JavaScript code sets 
+        the timer to 2 minutes and when the times are up then the page displays an alert message “times up”. 
+        The setTimeout() method calls a function or evaluates an expression after a specified number of milliseconds.
 
-        18. What is the difference between ViewState and SessionState?
-            ViewState: It is specific to a single page in a session.
-            SessionState: It is user specific that can access all the data on the web pages.
+    18. What is the difference between ViewState and SessionState?
+        ViewState: It is specific to a single page in a session.
+        SessionState: It is user specific that can access all the data on the web pages.
         
-        19. How to submit a form using JavaScript?
-            You can use document.form[0].submit()method to submit the form in JavaScript.
+    19. How to submit a form using JavaScript?
+        You can use document.form[0].submit()method to submit the form in JavaScript.
 
-        20. Does JavaScript support automatic type conversion? 
-            Yes, JavaScript supports automatic type conversion.
+    20. Does JavaScript support automatic type conversion? 
+        Yes, JavaScript supports automatic type conversion.
 
-        21. What are all the looping structures in JavaScript?
-            while loop: A while loop is a control flow statement that allows code to be executed repeatedly based on a 
-                        given Boolean condition. The while loop can be thought of as a repeating if statement.
-            for loop: A for loop provides a concise way of writing the loop structure. Unlike a while loop, 
-                        for statement consumes the initialization, condition and increment/decrement in one line 
-                        thereby providing a shorter, easy to debug structure of looping.
-            do while: A do-while loop is similar to while loop with the only difference that it checks the condition
+    21. What are all the looping structures in JavaScript?
+        while loop: A while loop is a control flow statement that allows code to be executed repeatedly based on a 
+                    given Boolean condition. The while loop can be thought of as a repeating if statement.
+        for loop: A for loop provides a concise way of writing the loop structure. Unlike a while loop, 
+                    for statement consumes the initialization, condition and increment/decrement in one line 
+                    thereby providing a shorter, easy to debug structure of looping.
+        do while: A do-while loop is similar to while loop with the only difference that it checks the condition
                 after executing the statements, and therefore is an example of Exit Control Loop.
 
-        22. How can the style/class of an element be changed?
-            To change the style/class of an element there are two possible ways. We use document.getElementByID method
+    22. How can the style/class of an element be changed?
+        To change the style/class of an element there are two possible ways. We use document.getElementByID method
             document.getElementById("myText").style.fontSize = "16px;
             document.getElementById("myText").className = "class";
 
-        23. Explain how to read and write a file using JavaScript?
-            The readFile() functions is used for reading operation.
-                readFile( Path, Options, Callback)
-            The writeFile() functions is used for writing operation.
-                writeFile( Path, Data, Callback)
+    23. Explain how to read and write a file using JavaScript?
+        The readFile() functions is used for reading operation.
+            readFile( Path, Options, Callback)
+        The writeFile() functions is used for writing operation.
+            writeFile( Path, Data, Callback)
 
 
-        24. What is called Variable typing in JavaScript ?
-            The variable typing is the type of variable used to store a number and using that same variable to 
+    24. What is called Variable typing in JavaScript ?
+        The variable typing is the type of variable used to store a number and using that same variable to 
             assign a “string”.
 
             Geeks = 42;
             Geeks = "GeeksforGeeks";
 
-        25. How to convert the string of any base to integer in JavaScript?
-            In JavaScript, parseInt() function is used to convert the string to an integer. 
-            This function returns an integer of base which is specified in second argument of parseInt() function. 
-            The parseInt() function returns Nan (not a number) when the string doesn’t contain number.
+    25. How to convert the string of any base to integer in JavaScript?
+        In JavaScript, parseInt() function is used to convert the string to an integer. 
+        This function returns an integer of base which is specified in second argument of parseInt() function. 
+        The parseInt() function returns Nan (not a number) when the string doesn’t contain number.
 
-        26. Explain how to detect the operating system on the client machine?
-            To detect the operating system on the client machine, one can simply use navigator.appVersion or 
+    26. Explain how to detect the operating system on the client machine?
+        To detect the operating system on the client machine, one can simply use navigator.appVersion or 
             navigator.userAgent property. The Navigator appVersion property is a read-only property and it 
             returns the string that represents the version information of the browser.
             
-            Deprecated: This feature is no longer recommended. Though some browsers might still support it, 
-            it may have already been removed from the relevant web standards, may be in the process of being dropped, 
-            or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible.
+            Deprecated(Not Approve of Something): This feature is no longer recommended. Though some browsers might 
+            still support it, it may have already been removed from the relevant web standards, may be in the process of being
+            dropped, or may only be kept for compatibility purposes. Avoid using it, and update existing code if possible.
+
+    12th Dec, 2024 (27th Mangsir 2081)
+    27. What are the types of Pop up boxes available in JavaScript?
+            There are three types of pop boxes available in JavaScript.
+
+            Alert
+            Confirm
+            Prompt
+
+    28. What is the difference between an alert box and a confirmation box?
+        An alert box will display only one button which is the OK button. It is used to inform the user about the 
+        agreement has to agree. But a Confirmation box displays two buttons OK and cancel, 
+        where the user can decide to agree or not.
 
 
 
