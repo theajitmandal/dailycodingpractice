@@ -307,10 +307,125 @@
             Confirm
             Prompt
 
+
     28. What is the difference between an alert box and a confirmation box?
         An alert box will display only one button which is the OK button. It is used to inform the user about the 
         agreement has to agree. But a Confirmation box displays two buttons OK and cancel, 
         where the user can decide to agree or not.
+
+    22nd Dec, 2024 (7th Poush 2081)
+
+    29. What is the disadvantage of using innerHTML in JavaScript?
+        There are lots of disadvantages of using the innerHTML in JavaScript as the content will replace everywhere. 
+        If you use += like “innerHTML = innerHTML + ‘html’” still the old content is replaced by HTML. 
+        It preserves event handlers attached to any DOM elements.
+
+    30. What is the use of void(0) ?
+        The void(0) is used to call another method without refreshing the page during the calling time parameter 
+        “zero” will be passed.
+
+    JavaScript Interview Questions for Experienced
+
+    31. What is the ‘Strict’ mode in JavaScript and how can it be enabled?
+        Strict Mode is a new feature in ECMAScript 5 that allows you to place a program or a function in a 
+        “strict” operating context. This strict context prevents certain actions from being taken and throws more 
+        exceptions. The statement “use strict” instructs the browser to use the Strict mode, which is a reduced and 
+        safer feature set of JavaScript.
+
+    32. How to get the status of a CheckBox?
+        The DOM Input Checkbox Property is used to set or return the checked status of a checkbox field. 
+        This property is used to reflect the HTML Checked attribute.
+            document.getElementById("GFG").checked;
+        If the CheckBox is checked then it returns True.
+
+    33. How to explain closures in JavaScript and when to use it?
+        The closure is created when a child functions to keep the environment of the parent’s scope even after the 
+        parent’s function has already executed. The Closure is a locally declared variable related to a function. 
+        The closure will provide better control over the code when using them.
+
+        // Explanation of closure 
+        function foo() { 
+            let b = 1; 
+            function inner() { 
+                return b; 
+            } 
+            return inner; 
+        } 
+        let get_func_inner = foo(); 
+
+        console.log(get_func_inner()); 
+        console.log(get_func_inner()); 
+        console.log(get_func_inner());
+
+    34. What is the difference between call() and apply() methods ?
+        Both methods are used in a different situation
+
+        call() Method: It calls the method, taking the owner object as argument. The keyword this refers to 
+        the ‘owner’ of the function or the object it belongs to. We can call a method that can be used on 
+        different objects.
+
+        apply() Method: The apply() method is used to write methods, which can be used on different objects. 
+        It is different from the function call() because it takes arguments as an array.
+
+    35. How to target a particular frame from a hyperlink in JavaScript ?
+        This can be done by using the target attribute in the hyperlink. Like
+        
+        <a href="/geeksforgeeks.htm" target="newframe">New Page</a>
+
+    36. Write the errors shown in JavaScript?
+            There are three different types of errors in JavaScript.
+
+        Syntax error: A syntax error is an error in the syntax of a sequence of characters or tokens that are 
+        intended to be written in a particular programming language.
+        Logical error: It is the most difficult error to be traced as it is the error on the logical part of 
+        the coding or logical error is a bug in a program that causes to operate incorrectly and terminate 
+        abnormally.
+        Runtime Error: A runtime error is an error that occurs during the running of the program, also known 
+        as an exception.
+
+    37. What is the difference between JavaScript and Jscript?
+
+        JavaScript
+
+        It is a scripting language developed by Netscape.
+        It is used to design client and server-side applications.
+        It is completely independent of Java language.
+
+        Jscript
+
+        It is a scripting language developed by Microsoft.
+        It is used to design active online content for the word wide Web.
+
+    38. What does var myArray = [[]]; statement declares? 
+        In JavaScript, this statement is used to declare a two-dimensional array.
+
+    39. How many ways an HTML element can be accessed in JavaScript code? 
+        There are four possible ways to access HTML elements in JavaScript which are:
+
+        getElementById() Method: It is used to get the element by its id name.
+        getElementsByClass() Method: It is used to get all the elements that have the given classname.
+        getElementsByTagName() Method: It is used to get all the elements that have the given tag name.
+        querySelector() Method: This function takes CSS style selector and returns the first selected element.
+
+    40. What is the difference between innerHTML & innerText? 
+        The innerText property sets or returns the text content as plain text of the specified node, 
+        and all its descendants whereas the innerHTML property sets or returns the plain text or HTML contents 
+        in the elements. Unlike innerText, inner HTML lets you work with HTML rich text and doesn’t automatically 
+        encode and decode text.
+
+    41. What is an event bubbling in JavaScript?
+        Consider a situation an element is present inside another element and both of them handle an event. 
+        When an event occurs in bubbling, the innermost element handles the event first, then the outer, and so on.
+
+    JavaScript MCQ Coding Interview Questions
+
+
+            
+            
+
+
+
+
 
 
 
