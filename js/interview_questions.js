@@ -4,7 +4,146 @@
     JavaScript (JS) is the most popular lightweight, scripting, and interpreted programming language. 
     It was developed by Brendan Eich in 1995. JavaScript is well-known as a scripting language for web pages, 
     mobile apps, web servers, and many other platforms. It is essential for both front-end and back-end developers 
-    to have a strong command of JavaScript, as many job roles require fluency in this language.
+    to have a strong command of JavaScript, as many job roles require fluency in this language. It is also called
+    browser's language.
+*/
+
+/*
+    *** Exercise Questions (From Notes) ***
+
+    1. What is a correct syntax for assigning a value to a variable? -> x = 5
+    2. Which one is NOT a legal variable name? -> -firstName
+    3. True or False: JavaScript variable names are case in-sensitive, meaning name is the same as NAME -> F
+
+    Valid or Invalid, Find ?
+        var __myName = "Ajit";                   Ans Here ->                                       ~ Valid
+        var _1my__Name = "Mandal";               Ans Here ->                                       ~ Valid
+        var 1myName = "Mandal";                  Ans Here ->                                       ~ Not Valid
+        var $myName = "Ajit Mandal";             Ans Here ->                                       ~ Valid
+
+    1. True or False: JAVA is short for JavaScript. -> False
+    2. Who invented JavaScript? -> Brendan Eich
+    3. Select the correct JavaScript method for finding the specified HTML element.
+        -> document.getElementById("demo").innerHTML
+
+    1. In HTML, JavaScripts must be inserted inside which HTML tags? -> <script> and </script> tag
+    2. What is the correct file extension for JavaScript files? -> .js
+    3. What is a correct syntax for including a JavaScript in an HTML document? 
+            -> <script src="index.js"></script>
+
+    1. How many statements can you find in this line of code:
+            let a = 5; let b = 6; c = a + b;
+            -> 3
+    2. True or False: A semicolons is required after a statement in JavaScript. 
+            -> False, not necessary but recommended
+    3. How many statements are present inside the function block?
+            function genie() {
+                let a, b, c;
+                a = 5;
+                b = 9;
+                c = a + b;
+            }
+            -> 4
+
+    1. What is a correct syntax for creating a comment in JavaScript?
+            -> // This is a comment
+    2. Select the correct syntax for commenting out the entire section of the code.   
+    3. What will be the value of x?            -> 5
+                x = 5
+                // x = 7
+
+    1. What is NOT a correct syntax for declaring variables?       -> dim x;
+    2. Consider the following code:
+            let x = 5;
+            x = 7;
+            x = x + x;
+            alert(x);
+    3. What will be the alerted result?                            -> 14
+    4. Which one is NOT a legal variable name?                     -> first-name
+    5. Create a variable called carName, assign the value Volvo to it.     -> let carName = "Volvo";
+    6. Create a variable called x, assign the value 50 to it.         -> let x = 50
+    7. Display the sum of 5 + 10, using two variables: x and y.
+            ->
+                let x = 5;
+                let y = 10;
+                let z = x + y;
+                console.log(z);
+            or,
+                let x = 5;
+                let y = 10;
+                document.getElementById("demo").innerHTML = x + y;
+
+    8. On one single line, declare three variables named fname, lname, and age, with the values John, Doe, and 46.
+            ->
+                let fname = 'John', lname = 'Doe, age = 46;
+
+    1. What is a correct use of the let keyword?       -> let x = 5;
+    2. True or False: Variables created with the let keyword can never change their value. -> False
+    3. True or False: With the let keyword, you can declare variables with the same name in the same block. -> F
+
+    
+    1. True or False: Variables created with the const keyword can never change their value.      -> T
+    2. What is a correct use of the const keyword?         -> const x = 5;
+    3. True or False: If you create an Array with the const keyword, you cannot change the item values. -> F
+
+    1. Consider the following code:
+            let x = 5;
+            let y = '8';
+            let z = x + y;
+        What will be the result of z?               -> 58
+
+    2. Multiply 10 with 5, and alert the result:       -> alert(10*5)
+    3. Insert the correct operator to divide 10 by 2:  -> let x = 10/2;
+
+    1. Consider the following code:
+             let x = 5;
+             x++;
+        What will be the result of x?                   -> 6
+
+    2. Insert the correct operator to return the remainder when 15 is divided by 9: -> let x = 15 % 9;
+    3. Consider the following code:
+                let x = 100 + 50 * 3;
+        What will be the result of x?                    -> 250
+
+    1. Consider the following code:
+            let x = 5;
+            x += 10;
+        What will be the result of x?               -> 15
+    2. Use the correct assignment operator that will result in x being 15 (same as x = x + y) if x = 10 & y = 5.  
+        -> x += y;
+    3. Use the correct assignment operator that will result in x being 50 (same as x = x * y) if x = 10 & y = 5.
+        -> x *= y
+
+    *** Data Types ***
+    1. In JavaScript, what is the data type of the following variable? let x = 7.5     -> Number
+    2. True or False: If a variable is declared using the let keyword, it can never change its data type.  -> False
+    3. Insert the correct data type for each variable:
+            let a = 10;                                     -> Number
+            let b = 'Sally';                                -> String
+            let c = true;                                   -> Boolean
+    
+    *** Functions ***
+    1. What keyword is used to define a function in JavaScript?             -> function
+    2. Execute the function named myFunction.
+        function myFunction() {
+            alert("Hello World!");                      
+        }
+                        -> myFunction();
+    3. Create a function called "myFunction" by completing the following line.
+          alert("Hello World!");
+
+        -> function myFunction (){
+            alert("Hello World!");
+        }
+
+    4. Make the given function return "Hello".
+        function myFunction() {
+            ______ "_______";
+        }
+        document.getElementById("demo").innerHTML = myFunction();
+
+        -> return "Hello";
+
 */
 
 // JS Interview Questions (From Geeks For Geeks)
