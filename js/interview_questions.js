@@ -81,7 +81,6 @@
     2. True or False: Variables created with the let keyword can never change their value. -> False
     3. True or False: With the let keyword, you can declare variables with the same name in the same block. -> F
 
-    
     1. True or False: Variables created with the const keyword can never change their value.      -> T
     2. What is a correct use of the const keyword?         -> const x = 5;
     3. True or False: If you create an Array with the const keyword, you cannot change the item values. -> F
@@ -144,6 +143,108 @@
 
         -> return "Hello";
 
+    // Objects
+    1. Consider the following object:
+        const car = {
+            brand: 'Volvo',
+            model: 'EX90',
+            drive: function() {
+                return true;
+            }
+        };
+        How many properties do the object have?                     -> 2
+
+    2. Alert "John" by extracting information from the person object.
+            const person = {
+                firstName: "John",
+                lastName: "Doe"
+            };
+
+            alert(___________);                                     -> alert(person.firstName)
+
+    3. Add the following property and value to the person object: country: Norway.
+
+            const person = {
+                firstName: "John",
+                lastName: "Doe"
+                _______ : _____                                     -> country: "Norway"
+            };
+
+    4. Consider the following object:
+            const person = {
+                name: 'John', age: 50
+            };
+        Insert the missing parts to alert 'John is 50'.
+        alert(_______.______ + '_______' + person.________);
+
+        -> alert(person.name + ' is ' + person.age);
+    
+    // Object Proerties
+
+    1. Consider the following object:
+            const car = {
+                brand : 'Volvo',
+                model : 'EX90'
+            };
+            What is NOT a correct syntax to alert 'Volvo'?
+                alert(car[brand])
+                alert(car.brand)
+                alert(car['brand'])
+            
+                -> alert(car[brand])
+    2. True or False: You are allowed to insert new properties to existing objects.     -> True
+    3. What is a correct syntax to delete the property model from an object named car?
+            del car.model
+            del model from car
+            delete car.model
+            car.model = NULL
+
+            -> delete car.model
+
+    // Object Methods
+            1. Consider the following object:
+            const person = {
+                    firstname: 'Jane',
+                    lastname: 'Doe',
+                    fullname: function() {
+                    return this.firstname + ' ' + this.lastname;
+                }
+            };
+            How many methods do the object have?                            -> 1
+        2. Consider the following object:
+            const person = {
+                firstname: 'Jane',
+                lastname: 'Doe',
+                fullname: function() {
+                return this.firstname + ' ' + this.lastname;
+                }
+            };
+            Insert the missing parts to alert 'Jane Doe'.                   
+                ~ alert( ____    _____   ____   ____  );                    -> alert(person.fullname())
+        3. True or False:You are allowed to insert new methods to existing objects.     -> True
+
+    // Object Displays
+                1. Only one of the following methods are a built-in JavaScript Object method, which one?
+                return()
+                all()
+                entries()
+                methods()
+            -> entries()
+
+        2. What method can be used to convert JavaScript Objects into JSON strings?
+
+                JSON.toString()
+                JSON.stringify()
+                JSON.string()
+
+            -> JSON.stringify()
+
+        3. When using Object.values() on a JavaScript Object, what will be the data type of the returned result?
+                Array
+                String
+                JSON
+                Object
+            -> Array
 */
 
 // JS Interview Questions (From Geeks For Geeks)
